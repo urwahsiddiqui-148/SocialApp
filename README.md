@@ -1,22 +1,26 @@
-# Social Media App
+# SocialApp
 
-This is a Flutter-based Social Media App with a sleek and modern design.
+SocialApp is a Flutter-based social media application that connects users through an interactive, user-friendly interface. This project is designed to offer seamless integration with various backend services while maintaining excellent performance across different platforms.
 
-![image](https://user-images.githubusercontent.com/67297759/190064136-5f096750-e957-4817-8372-145b537d7a88.png)
-![image](https://user-images.githubusercontent.com/67297759/190063284-25aac6bf-c869-4925-be56-83117027e207.png)
+## Features
+
+
+- **Personalized Fonts**: Custom fonts using the Google Fonts package.
+- **State Management**: Efficient state handling with the Bloc pattern.
+- **Image Loading**: Smooth image rendering with BlurHash for optimized loading.
+
+## Packages Used
+
+- [`cupertino_icons: ^1.0.2`](https://pub.dev/packages/cupertino_icons): Provides Cupertino-style icons.
+- [`google_fonts: ^6.2.1`](https://pub.dev/packages/google_fonts): A Flutter package to use Google Fonts in your app.
+- [`flutter_bloc: ^8.1.1`](https://pub.dev/packages/flutter_bloc): Implements the BLoC (Business Logic Component) pattern for state management.
+- [`flutter_blurhash: ^0.8.2`](https://pub.dev/packages/flutter_blurhash): A library to decode BlurHash strings into images, allowing placeholders while images load.
 
 ## Installation
-To get started, you need to have [Flutter](https://flutter.dev/docs/get-started/install) installed on your machine. Then, follow the instructions below:
 
-1. Open the terminal and navigate to the project folder.
-2. Run the command `flutter packages get` to install the required packages.
-3. Run `flutter run` to build and run the debug app on your emulator/phone
+To get started with this project, clone the repository and run the following commands:
 
-## Credits
 
-- [Sajon](https://dribbble.com/sajon) for the original [Social Media App Design](https://dribbble.com/shots/15468493-Social-Media-App)
-- [Flutter](https://flutter.dev) for providing an amazing cross-platform framework.
-
-## License
-
-This project is licensed under the [MIT License](https://github.com/rrdhoi/SocialMediaApp/blob/master/LICENSE).
+- **git clone** https://github.com/your-username/socialApp.git
+- **cd social app**
+- **flutter pub get**
