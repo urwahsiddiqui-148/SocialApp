@@ -1,0 +1,39 @@
+buildscript {
+    ext {
+        // Define Kotlin version
+        kotlin_version = '1.8.22'  // Adjust this Kotlin version as needed
+    }
+
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        // Android Gradle Plugin
+        classpath 'com.android.tools.build:gradle:8.0.2'  // Make sure the version is compatible with Gradle and your setup
+
+        // Kotlin Gradle Plugin
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.buildDir = "../build"
+
+// Configure subprojects (like app module)
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+    project.evaluationDependsOn(":app")
+}
+
+// Clean task for cleaning the build directory
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}
